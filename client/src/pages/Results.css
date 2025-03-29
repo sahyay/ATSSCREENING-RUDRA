@@ -1,0 +1,300 @@
+.results-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.results-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.alert {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.filter-card {
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.search-group {
+  flex-grow: 1;
+}
+
+.search-group form {
+  display: flex;
+  gap: 10px;
+}
+
+.no-data {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+}
+
+.results-count {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.results-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.result-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.result-card.rejected {
+  border-color: #dc3545;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.result-name-section {
+  flex-grow: 1;
+}
+
+.result-name {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.result-email {
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.result-email:hover {
+  text-decoration: underline;
+}
+
+.result-score-section {
+  text-align: right;
+}
+
+.score-badge {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.score-high {
+  background-color: #28a745;
+}
+
+.score-medium {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.score-low {
+  background-color: #dc3545;
+}
+
+.score-label {
+  font-size: 12px;
+  color: #777;
+}
+
+.result-details {
+  margin-top: 10px;
+}
+
+.result-info {
+  margin-bottom: 10px;
+}
+
+.info-item {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.info-label {
+  font-weight: bold;
+  color: #555;
+  min-width: 80px;
+}
+
+.info-value {
+  color: #333;
+}
+
+.result-skills {
+  margin-top: 15px;
+}
+
+.result-skills h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skill-tag {
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 5px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.skill-tag.matched {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.rejection-message {
+  color: #dc3545;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 5px;
+}
+
+.pagination li button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination li button:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination li button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination li button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.loading-spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
